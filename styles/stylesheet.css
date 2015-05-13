@@ -16,14 +16,15 @@ body{line-height:1;background-color:white;width:100%;font-family:Rokkitt,serif;c
 }
 .container-full{width:100%;padding:0;margin:0;}
 h1,h2,h3,h4,h5{font-family:Ubuntu,sans-serif;color:#228b22;font-weight:bold;}
-h1{font-size:48px;}
+h1{font-size:48px;line-height:48px;}
 h2{font-size:32px;color:#800020;}
 a:hover{text-decoration:none;}
 #main-nav{background:rgba(255,255,255,0.65);}
 #main-nav li a,#main-nav .icon-bar{color:#000;}
+#main-nav li:hover{background:rgba(34,139,34,0.15);}
+footer{min-height:40px;background-color:#800020;color:#fff;}
+footer p{padding:20px 0;font-size:24px;}
 #hero:before{content:"";display:block;position:absolute;left:0;top:0;height:475px;width:100%;z-index:-1;background-image:url(../img/path-portrait.jpg);background-size:cover;background-repeat:no-repeat;-webkit-filter:sepia(0.5);filter:sepia(0.5);}
-@media (min-width: 480px){#hero:before{background-image:url(../img/path-landscape.jpg);}
-}
 @media (min-width: 992px){#hero:before{background-position:0 -175px;}
 }
 #hero{height:475px;width:100%;}
@@ -33,13 +34,15 @@ a:hover{text-decoration:none;}
 }
 .small-margin{margin:30px 4.166% 0;}
 #projects{margin-top:70px;}
+@media (min-width: 480px){#hero:before{background-image:url(../img/path-landscape.jpg);}
+#projects h1{margin-bottom:20px;}
+}
 .project-summary{margin-top:50px;}
 .project-summary img{width:100%;}
 .project-summary a h2{color:#800020;text-underline:none;}
 .project-summary:hover{-webkit-animation:fade .5s ease-in forwards;animation:fade .5s ease-in forwards;}
-#about-me{background:#800020;min-height:300px;margin:40px 0;color:#fff;}
+#about-me{background:#800020;min-height:300px;margin:70px 0 40px;color:#fff;}
 #about-me h1{margin:45px 4.166%;color:#fff;}
 #about-me p{font-size:32px;margin:40px 4.166%;line-height:32px;}
-#skills h1{font-size:40px;}
 #skills ul{margin:30px auto;}
 #skills li{font-size:32px;line-height:32px;color:#800020;}

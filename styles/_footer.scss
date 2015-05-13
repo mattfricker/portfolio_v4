@@ -1,2 +1,10 @@
 /*Footer Styles*/
-
+footer{
+	min-height: 40px;
+	background-color: $tertiary-color;
+	color: #FFF;
+	p{
+		padding: 20px 0;
+		font-size: 1.5 * $em;
+	}
+}

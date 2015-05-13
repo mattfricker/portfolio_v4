@@ -5,6 +5,12 @@
 	.icon-bar{
 		color: #000;
 	}
+	li{
+		&:hover{
+			background: rgba($secondary-text-color, .15);
+		}
+	}
 }
+
 
 
