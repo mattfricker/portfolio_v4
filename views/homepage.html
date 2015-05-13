@@ -1,0 +1,30 @@
+<div class="row-fluid" id="hero">
+<p class="text-center">&quot;Go instead where there is no path and leave a trail&quot; &#45; Emmerson</p>
+</div>
+<section class="row-fluid col-xs-11 small-margin" id="projects">
+	<h1 class="text-center">Portfolio</h1>
+	<div class="col-xs-12 col-sm-5 project-summary chunk" data-ng-repeat="project in projects">
+		<a href="{{project.link}}">
+			<img src="img/projects/{{project.title}}.PNG" alt="Thumbnail screenshot for the {{project.title}} project">
+			<h2 class="text-center">{{project.title}}</h2>
+		</a>
+	</div>
+</section>
+<section id="about-me" class="row-fluid col-xs-12">
+	<h1>About Me</h1>
+	<p ng-repeat="paragraph in about">{{paragraph.description}}</p>
+</section>
+<section id="skills" class="row-fluid col-xs-11 small-margin text-center">
+	<div class="col-xs-12 col-sm-5 chunk" id="current-skills">
+		<h1>Current Skills</h1>
+		<ul>
+			<li ng-repeat="cskill in currentSkills">{{cskill.skill}}</li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-5 chunk" id="future-skills">
+		<h1>Future Skills</h1>
+		<ul>
+			<li ng-repeat="fskill in futureSkills">{{fskill.skill}}</li>
+		</ul>
+	</div>
+</section>
