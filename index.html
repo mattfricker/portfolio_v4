@@ -5,7 +5,7 @@
     <title>Matthew Fricker</title>
     <meta name="description" content="Enter Website Description Here.">
     <meta name="keywords" content="Enter Keywords Here">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu|Rokkitt:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu%7cRokkitt:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/stylesheet.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
                     <span class= "icon-bar"></span>
                     <span class= "icon-bar"></span>
                 </button>
-                <div class="navbar-collapse collapse navbar-right" ng-controller="NavController">
+                <div class="navbar-collapse collapse navbar-right" data-ng-controller="NavController">
                     <ul class="nav navbar-nav" id="nav-links">
                         <li data-ng-class="{current: isCurrent('/')}"><a data-ng-href="#/">Home</a></li>
                         <li><a data-ng-href="http://www.github.com/mattfricker">GitHub</a></li>
@@ -34,7 +34,7 @@
     </div>
 </header>
 
-<div data-ng-view autoscroll="true" class="container-fluid container-full"></div>
+<div data-ng-view class="container-fluid container-full"></div>
 
 <footer class="container-fluid col-xs-12">
     <p class="text-center">Developed by Matthew Fricker, 2015</p>
